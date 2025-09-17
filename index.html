@@ -904,19 +904,6 @@
                             </select>
                         </div>
 
-                        <div class="form-group">
-                            <label class="form-label" for="observacoes">
-                                Observações ou dúvidas
-                            </label>
-                            <textarea 
-                                id="observacoes" 
-                                name="observacoes" 
-                                class="form-input" 
-                                rows="4"
-                                placeholder="Deixe aqui suas observações, dúvidas ou informações adicionais..."
-                            ></textarea>
-                        </div>
-
                         <button type="submit" class="btn" id="submitBtn">
                             Confirmar Presença
                         </button>
@@ -985,7 +972,6 @@
                     telefone: document.getElementById('telefone').value,
                     nomeAluno: document.getElementById('nomeAluno').value,
                     serie: document.getElementById('serie').value,
-                    observacoes: document.getElementById('observacoes').value || '',
                     timestamp: new Date().toISOString(),
                     evento: 'Abertura de Matrículas 2026',
                     dataEvento: '27/09/2025'
