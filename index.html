@@ -1029,19 +1029,6 @@
             } catch (error) {
                 console.error('Erro detalhado:', error);
                 
-                // Mostrar erro mais específico
-                let errorMessage = 'Ops! Houve um erro ao enviar sua manifestação de interesse.';
-                
-                if (error.name === 'TypeError' && error.message.includes('fetch')) {
-                    errorMessage += ' Verifique sua conexão com a internet.';
-                } else if (error.message.includes('CORS')) {
-                    errorMessage += ' Erro de configuração do servidor.';
-                } else if (error.message.includes('404')) {
-                    errorMessage += ' URL do webhook não encontrada.';
-                }
-                
-                alert(errorMessage + ' Por favor, tente novamente ou entre em contato com a equipe organizadora.');
-            } finally {
                 // Re-enable button
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = 'Confirmar Presença';
