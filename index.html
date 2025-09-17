@@ -1004,8 +1004,12 @@
                     throw new Error(`Erro HTTP: ${response.status} - ${errorText}`);
                 }
                 
-                const result = await response.json();
-                console.log('Sucesso:', result);
+            try {
+                    const result = await response.json();
+                    console.log('Sucesso:', result);
+                } catch (e) {
+                    console.log('Webhook processado com sucesso (resposta não é JSON)');
+                }
                 
                 // Show success message
                 successMessage.style.display = 'block';
