@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+a<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viagem do Dia do Professor - Fortaleza 2025</title>
+    <title>Abertura de Matrículas - Escola Amadeus</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
@@ -823,99 +823,111 @@
 
     <!-- Form Section -->
     <!-- Form -->
-    <section class="form-section" id="inscricao">
-        <div class="container">
-            <div class="form-container">
-                <div class="form-header">
-                    <h2>📝 Manifestação de Interesse</h2>
-                    <p>Preencha o formulário para confirmar sua participação na nossa abertura de matrículas</p>
-                </div>
-
-                <form id="interesseForm">
-                    <div class="form-group">
-                        <label class="form-label" for="nomeColaborador">Nome Completo do Colaborador *</label>
-                        <input 
-                            type="text" 
-                            id="nomeColaborador" 
-                            name="nomeColaborador" 
-                            class="form-input" 
-                            placeholder="Digite seu nome completo"
-                            required
-                        >
+        <!-- Form Section -->
+        <section class="form-section" id="inscricao">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>📝 Confirmação de Presença</h2>
+                        <p>Preencha o formulário para confirmar sua participação na abertura de matrículas 2026</p>
                     </div>
 
-                    <div class="form-group">
-                        <label class="form-label" for="telefone">Telefone/WhatsApp *</label>
-                        <input 
-                            type="tel" 
-                            id="telefone" 
-                            name="telefone" 
-                            class="form-input" 
-                            placeholder="(84) 99999-9999"
-                            required
-                        >
-                    </div>
-
-                    <div class="companion-section">
-                        <div class="checkbox-group">
+                    <form id="inscricaoForm">
+                        <div class="form-group">
+                            <label class="form-label" for="nomeResponsavel1">Nome do Responsável 1 *</label>
                             <input 
-                                type="checkbox" 
-                                id="levarAcompanhante" 
-                                name="levarAcompanhante" 
-                                class="checkbox-input"
-                                onchange="toggleCompanionDetails()"
+                                type="text" 
+                                id="nomeResponsavel1" 
+                                name="nomeResponsavel1" 
+                                class="form-input" 
+                                placeholder="Digite o nome completo do primeiro responsável"
+                                required
                             >
-                            <label for="levarAcompanhante" class="checkbox-label">
-                                Pretendo levar acompanhantes (cônjuge/filhos)
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="nomeResponsavel2">Nome do Responsável 2</label>
+                            <input 
+                                type="text" 
+                                id="nomeResponsavel2" 
+                                name="nomeResponsavel2" 
+                                class="form-input" 
+                                placeholder="Digite o nome completo do segundo responsável (se houver)"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="telefone">Telefone (WhatsApp) *</label>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone" 
+                                class="form-input" 
+                                placeholder="(84) 99999-9999"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="nomeAluno">Nome do Aluno *</label>
+                            <input 
+                                type="text" 
+                                id="nomeAluno" 
+                                name="nomeAluno" 
+                                class="form-input" 
+                                placeholder="Digite o nome completo do aluno"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="serie">Série *</label>
+                            <select 
+                                id="serie" 
+                                name="serie" 
+                                class="form-input form-select"
+                                required
+                            >
+                                <option value="Maternal II">Maternal II</option>
+                                <option value="Maternal III">Maternal III</option>
+                                <option value="Grupo 4">Grupo 4</option>
+                                <option value="Grupo 5">Grupo 5</option>
+                                <option value="1º Ano">1º Ano</option>
+                                <option value="2º Ano">2º Ano</option>
+                                <option value="3º Ano">3º Ano</option>
+                                <option value="4º Ano">4º Ano</option>
+                                <option value="5º Ano">5º Ano</option>
+                                <option value="6º Ano">6º Ano</option>
+                                <option value="7º Ano">7º Ano</option>
+                                <option value="8º Ano">8º Ano</option>
+                                <option value="9º Ano">9º Ano</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="observacoes">
+                                Observações ou dúvidas
                             </label>
+                            <textarea 
+                                id="observacoes" 
+                                name="observacoes" 
+                                class="form-input" 
+                                rows="4"
+                                placeholder="Deixe aqui suas observações, dúvidas ou informações adicionais..."
+                            ></textarea>
                         </div>
 
-                        <div id="companionDetails" class="companion-details">
-                            <div class="form-group">
-                                <label class="form-label" for="quantosAcompanhantes">
-                                    Quantos acompanhantes? *
-                                </label>
-                                <select 
-                                    id="quantosAcompanhantes" 
-                                    name="quantosAcompanhantes" 
-                                    class="form-input form-select"
-                                >
-                                    <option value="">Selecione a quantidade</option>
-                                    <option value="1">1 pessoa</option>
-                                    <option value="2">2 pessoas</option>
-                                    <option value="3">3 pessoas</option>
-                                    <option value="4">4 pessoas</option>
-                                    <option value="5+">Mais de 4 pessoas</option>
-                                </select>
-                            </div>
+                        <button type="submit" class="btn" id="submitBtn">
+                            Confirmar Presença
+                        </button>
 
+                        <div id="successMessage" class="success-message">
+                            ✅ Presença confirmada com sucesso! Aguardamos vocês na abertura de matrículas 2026!
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="observacoes">
-                            Observações, dúvidas ou necessidades especiais
-                        </label>
-                        <textarea 
-                            id="observacoes" 
-                            name="observacoes" 
-                            class="form-input" 
-                            rows="4"
-                            placeholder="Deixe aqui suas observações, dúvidas, necessidades especiais, restrições alimentares, etc..."
-                        ></textarea>
-                    </div>
-
-                    <button type="submit" class="btn" id="submitBtn">
-                        Enviar Manifestação de Interesse
-                    </button>
-
-                    <div id="successMessage" class="success-message">
-                        ✅ Interesse registrado com sucesso! A equipe organizadora entrará em contato em breve.
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -968,20 +980,20 @@
             
             // Collect form data
             const formData = {
-                nomeColaborador: document.getElementById('nomeColaborador').value,
-                telefone: document.getElementById('telefone').value,
-                levarAcompanhante: document.getElementById('levarAcompanhante').checked,
-                quantosAcompanhantes: document.getElementById('quantosAcompanhantes').value || '0',
-                observacoes: document.getElementById('observacoes').value || '',
-                timestamp: new Date().toISOString(),
-                dataViagem: '03-05/10/2025',
-                destino: 'Fortaleza',
-                evento: 'Viagem do Dia do Professor'
+                    nomeResponsavel1: document.getElementById('nomeResponsavel1').value,
+                    nomeResponsavel2: document.getElementById('nomeResponsavel2').value || '',
+                    telefone: document.getElementById('telefone').value,
+                    nomeAluno: document.getElementById('nomeAluno').value,
+                    serie: document.getElementById('serie').value,
+                    observacoes: document.getElementById('observacoes').value || '',
+                    timestamp: new Date().toISOString(),
+                    evento: 'Abertura de Matrículas 2026',
+                    dataEvento: '27/09/2025'
             };
             
             try {
                 // SUBSTITUA pela URL real do seu webhook n8n
-                const webhookUrl = 'https://webhook.escolaamadeus.com/webhook/passeioprofessor';
+                const webhookUrl = 'https://webhook.escolaamadeus.com/webhook/eduhubamadeus';
                 
                 console.log('Enviando dados:', formData);
                 
